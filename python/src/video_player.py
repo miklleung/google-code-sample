@@ -15,8 +15,10 @@ class VideoPlayer:
 
     def show_all_videos(self):
         """Returns all videos."""
-
-        print("show_all_videos needs implementation")
+        print("Here's a list of all available videos:")
+        for vid_id in self._video_library.get_video():
+            print(vid_id)
+#        print("show_all_videos needs implementation")
 
     def play_video(self, video_id):
         """Plays the respective video.
@@ -24,7 +26,10 @@ class VideoPlayer:
         Args:
             video_id: The video_id to be played.
         """
-        print("play_video needs implementation")
+        if playing == 0:
+
+        print("Playing video: ", video_id)
+        #print("play_video needs implementation")
 
     def stop_video(self):
         """Stops the current video."""
